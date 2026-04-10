@@ -1,0 +1,25 @@
+{
+  "serviceName": "user-dashboard",
+  "status": "healthy",
+  "timestamp": "2024-10-27T10:30:00Z",
+  "version": "1.2.3",
+  "dependencies": {
+    "database": {
+      "status": "healthy",
+      "responseTimeMs": 12
+    },
+    "authenticationService": {
+      "status": "healthy",
+      "responseTimeMs": 25
+    },
+    "messageQueue": {
+      "status": "degraded",
+      "errors": ["High latency detected", "Connection timeouts"]
+    }
+  },
+  "metrics": {
+    "cpuUsage": 0.65,
+    "memoryUsage": 0.78,
+    "activeUsers": 1234
+  }
+}
